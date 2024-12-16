@@ -301,10 +301,10 @@ function getSumToN(n) {
 function getSumOfDigits(num) {
   return String(num)
     .split('')
-    .map(function (item) {
+    .map(function backtoNumber(item) {
       return Number(item);
     })
-    .reduce(function (sum, item) {
+    .reduce(function summator(sum, item) {
       return sum + item;
     }, 0);
 }
